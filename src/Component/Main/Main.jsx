@@ -26,7 +26,7 @@ const Main = () => {
                 {!showResult ?
                   <>
                       <div className="greet">
-                         <p><span>Hello , sanket</span></p>
+                         <p><span>Hello ,I'm Sanket</span></p>
                          <p> How , May I help you ?</p>
                       </div>
     
@@ -102,7 +102,13 @@ const Main = () => {
                         <div>
                             <img src={assets.gallery_icon} alt=""/>
                             <img src={assets.mic_icon} alt="" />
-                            <img onClick={ () => onSent()} src={assets.send_icon} alt="" />
+                            {
+                                input ?
+                                  <img onClick={ () => onSent()} src={assets.send_icon} alt="" />
+                                : 
+                                 null
+                            }
+                            {/* <img onClick={ () => onSent()} src={assets.send_icon} alt="" /> */}
                         </div>
                      </div>
 

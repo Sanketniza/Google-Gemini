@@ -49,7 +49,9 @@
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    /* gap: 15px; */
+    animation: fadeIn 1.5s;
+
 }
 
 .sidebar .top .recent-entry{
@@ -77,12 +79,12 @@
 .sidebar .bottom {
     display: flex;
     flex-direction: column;
+    animation: fadeIn 1.5s;
 }
 
 .sidebar .bottom .bottom-item {
     padding-right: 10px;
     cursor: pointer;
-   
 }
 
 .sidebar .recent-entry {
@@ -103,3 +105,8 @@
     width: 23px;
 }
 
+@media (max-width:600px) {
+    .sidebar {
+        display: none;
+    }
+}
